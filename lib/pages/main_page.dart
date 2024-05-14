@@ -170,12 +170,13 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Today",style: TextStyle(color: Colors.white,fontSize: 13)),
-                  Text("7 Days",style: TextStyle(color: Colors.white,fontSize: 13)),
+                  Text("3 Days",style: TextStyle(color: Colors.white,fontSize: 13)),
                 ],
               ),
             ), // turtinchi
             Container(// beshinchi
             //  padding: EdgeInsets.only(left: 10,right: 10),
+              margin: EdgeInsets.only(left: 60),
               height: 70,
               child:ListView.separated(
                 scrollDirection: Axis.horizontal,
@@ -184,7 +185,7 @@ class _MainPageState extends State<MainPage> {
                 },
                 separatorBuilder: (context,index){
                 return Divider(thickness: 20,color: Colors.red);
-                }, itemCount: 7)
+                }, itemCount: 3)
 
             ), // beshinchi
             Container(// oltinchi

@@ -9,7 +9,7 @@ class DayTimeNetService{
     Response response=await dio.get("http://api.weatherapi.com/v1/forecast.json?key=22c51a5c93cb4155994174721230511",
     queryParameters: {
       'q':city,
-      'days':7,
+      'days':3,
       'aqi':"yes",
       'alerts':'no'
     });
